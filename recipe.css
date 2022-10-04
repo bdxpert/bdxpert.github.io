@@ -29,9 +29,12 @@ li span{
     text-align: center;
 }
 .footer {
-    width: 229px;
+
     text-align: right;
     margin-left: 0px;
+}
+.validator{
+    text-align: right;
 }
 .comment {
     margin: auto;
