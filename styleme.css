@@ -1,0 +1,28 @@
+body {
+    background-color: lightblue;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+    font-family: Verdana, serif;
+    font-weight: bold;
+}
+
+h2 {
+    color: blueviolet;
+    margin-left: 25px;
+    font-family: Verdana, fantasy;
+    font-weight: lighter;
+
+}
+
+h3 {
+    color: blueviolet;
+    margin-left: 30px;
+}
+p {
+    color: cornflowerblue;
+    margin-left: 20px;
+}
