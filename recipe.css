@@ -1,21 +1,20 @@
 body {
     background-color: white;
-    font-family: sans-serif;
+    font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+    font-size: 11pt;
+    color: #404040;
+    background-image: url("recipeImages/background.gif");
 }
 
 h1 {
     color: #A4A400;
     background-color: #F0F0F0 ;
-    font-family: Verdana, serif;
+    font-family: Lucida Sans Unicode, Helvetica, Arial, Verdana, serif;
     font-weight: bold;
+    font-size:  22px;
 }
-
-h2 {
-    color: #A4A400;
-    background-color: #F0F0F0 ;
-    font-family: Verdana, serif;
-    font-weight: bold;
-
+.h1class{
+    font-size:  18px;
 }
 li span{
     text-decoration: underline;
@@ -64,6 +63,9 @@ strong {
 }
 span{
     margin-left: 20px;
+}
+a {
+    color: #A4A400;
 }
 a:link {
     text-decoration: none;
