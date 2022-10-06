@@ -1,0 +1,143 @@
+body {
+    background-color: lightseagreen;
+    font-family: sans-serif;
+    background-image: url("images/background.png");
+    font-size:  8pt;
+    font-family: Verdana, serif;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.banner{
+    text-align: center;
+    background-image: url("images/bannerbg.png");
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+#container {
+    /*background-color: lightgray;*/
+    overflow: hidden;
+    /*padding: 10px;*/
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
+    width: 800px;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+#header  {
+    text-align: center;
+    font-family: Tahoma, Verdana;
+    font-size: 24pt;
+    font-weight: bold;
+    text-shadow: 3px 3px #999999;
+}
+#column1 {
+    /*background-color: lightblue;*/
+    float: left;
+    /*margin-left: 10px;*/
+    width: 550px;
+
+
+}
+#column1 .header {
+    background-image: url("images/rbg.png");
+}
+#column1 .highlight {
+    color: red;
+    font-size: 48pt;
+    font-weight: bold;
+}
+#column2 {
+    background-color: #4f8e8e;
+    float: right;
+    /*margin-left: 10px;*/
+    width: 250px;
+}
+.column1section1 {
+    width:  47%;
+    float: left;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+ .box{
+    background-color: burlywood;
+    border-color: gray;
+    border-style: solid;
+    border-radius: 4px;
+    /*display: inline-block;*/
+}
+.column1section2 {
+    width:  47%;
+    float: right;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+.displayBlock{
+    display: inline;
+}
+.displayPage {
+    clear: both;
+    text-align: center;
+    background-color: #4f8e8e;
+    /*position: absolute;*/
+    bottom: 0px;
+    /*width: 100%;*/
+}
+/*
+
+h1 {
+    color: navy;
+    margin-left: 20px;
+    font-family: Verdana, serif;
+    font-weight: bold;
+}
+
+h2 {
+    color: blueviolet;
+    margin-left: 25px;
+    font-family: Verdana, fantasy;
+    font-weight: lighter;
+
+}
+
+h3 {
+    color: blueviolet;
+    margin-left: 30px;
+}
+p {
+    color: cornflowerblue;
+    margin-left: 20px;
+}
+strong {
+    margin-left: 20px;
+}
+span{
+    margin-left: 20px;
+}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+a:active {
+    text-decoration: underline;
+}
+.firstcharacter {
+    color: #903;
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}*/
