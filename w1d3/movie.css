@@ -65,10 +65,11 @@ body {
     margin-top: 1%;
 }
  .box{
-    background-color: burlywood;
+    background-color: #E8DC9B;
     border-color: gray;
     border-style: solid;
     border-radius: 4px;
+    text-align: justify;
     /*display: inline-block;*/
 }
 .column1section2 {
@@ -88,6 +89,10 @@ body {
     bottom: 0px;
     /*width: 100%;*/
 }
+.moveRight{
+    float:right;
+}
+
 /*
 
 h1 {
