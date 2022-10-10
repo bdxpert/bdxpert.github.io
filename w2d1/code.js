@@ -1,13 +1,4 @@
 /* runs test to see if expected argument is === to value returned by function2test argument */
-/*
-function myFunctionTest(expected, found) {
-    if (expected === found) {
-        return "TEST SUCCEEDED";
-    } else {
-        return "TEST FAILED.  Expected " + expected + " found " + found;
-    }
-}
-*/
 
 function max(x,y){
     let data = [x,y];
@@ -79,8 +70,6 @@ function findLongestWord(wordsArry) {
 }
 // console.log("Expected output of findLongestWord([\"w\", \"cc\", \"sss\"] is 3  " + myFunctionTest(3, findLongestWord(["w", "cc", "sss"])));
 
-
-
 function filterLongWords(wordsArry, maxLen) {
     return wordsArry.filter(function(elem, i, array) {
         return elem.length > maxLen;
@@ -108,18 +97,11 @@ const element3 = a.filter(function(elem, i, array) {
 const mulTotal = a.reduce(function(prev, elem, i, array) {
     return prev*elem;
 });
-// console.log("Expected output of [1,3,5,3,3] multiply total is 135  " + myFunctionTest(135, mulTotal));
-// document.writeln(mulTotal + "<br/>");
-/*
-const s = "Connie Client";
-let fName = s.substring(0, s.indexOf(" "));
-console.log(fName);
-*/
 
 function shortest(x, y, z) {
     let item = [x,y,z];
     return item.reduce(function(prev, elm, i, array){
-        return (prev.length > elm.length)? elm : prev;
+        return (prev > elm)? elm : prev;
     });
 }
 // console.log("Expected output of [1,3,5,3,3] multiply total is 135  " + myFunctionTest("z", shortest("hello", "z", "bye")));

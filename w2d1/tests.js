@@ -45,7 +45,7 @@ describe("findLongestWord", function () {
 });
 
 describe("filterLongWords", function () {
-    it("takes ['hello','ss','ddd'] ,2  array filter to a length, and returns longest word of given length",
+    it("takes ['hello','ss','ddd'] , length  array filter to a length, and returns longest word of given length",
         function () {
             assert.equal(['hello','ddd'].toString(), filterLongWords(['hello','ss','ddd'], 2));
         });
@@ -54,6 +54,6 @@ describe("filterLongWords", function () {
 describe("shortest", function () {
     it("takes 2,4,1 number, and returns shorest/minimum number",
         function () {
-            assert.equal(2, shortest(2,4,5));
+            assert.equal(1, shortest(2,4,1));
         });
 });
