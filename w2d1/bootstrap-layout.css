@@ -1,0 +1,29 @@
+footer {
+    background-color: darkgreen;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+    height: 200px;
+    /*border: 1px solid;*/
+}
+.sidenav{
+    /*background-color: #aaaaaa;*/
+    height: 550px;
+}
+.text-left{
+    /*background-color: #cccccc;*/
+}
+.header{
+    height: 100px;
+    background-color: lightblue;
+    font-size: 40px;
+    padding-top: 20px;
+}
+.menu{
+    background-color: darkgreen;
+    margin-bottom: 0px;
+}

@@ -10,36 +10,42 @@
   <link rel="stylesheet" href="bootstrap-layout.css">
 </head>
 <body>
-<div class="container-fluid text-center header">Header</div>
-<!--<nav class="navbar menu">-->
-<div class="container-fluid menu">
-  <div class="collapse navbar-collapse" id="myNavbar">
-    <ul class="nav navbar-nav ">
-      <li class="active"><a href="#">Menu1</a></li>
-      <li><a href="#">Menu2</a></li>
-      <li><a href="#">Menu3</a></li>
-    </ul>
+<!--<div class="container-fluid text-center header">Header</div>-->
+<nav class="navbar menu">
+  <div class="container-fluid menu">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav ">
+        <li><h3>Golden Dom Market</h3></li>
+        <li class="active"><a href="#">Menu1</a></li>
+        <li><a href="#">Menu2</a></li>
+        <li><a href="#">Menu3</a></li>
+      </ul>
+    </div>
   </div>
-</div>
-<!--</nav>-->
+</nav>
 
 <div class="container-fluid ">
   <div class="row content">
     <form>
-    <div class="col-sm-2 sidenav">
-      <div class="form-group">
-        <label for="siteUrl">Email address</label>
-        <input type="text" class="form-control" id="siteUrl" aria-describedby="siteUrlHelp" placeholder="Enter Site URL" required>
-        <small id="siteUrlHelp" class="form-text text-muted">Please enter site address start with http:// or https://</small>
+      <h1>New Product Form</h1>
+      <div class="col-sm-2 sidenav">
+        <div class="form-group">
+          <label for="productNumber">Product Number</label>
+          <input type="text" class="form-control" id="productNumber" aria-describedby="productNumHelp" placeholder="Enter product number" required>
+          <small id="productNumHelp" class="form-text text-muted">Please enter product number</small>
+        </div>
       </div>
-    </div>
-    <div class="col-sm-8 text-left">
-      <p>Column2</p>
-    </div>
+      <div class="col-sm-8 text-left">
+        <div class="form-group">
+          <label for="quantityStock">Email address</label>
+          <input type="text" class="form-control" id="quantityStock" aria-describedby="quantityStockHelp" placeholder="Quantity In Stock" required>
+          <small id="quantityStockHelp" class="form-text text-muted">Please enter quantity in stock</small>
+        </div>
+      </div>
     </form>
-<!--    <div class="col-sm-2 sidenav">-->
-<!--      <p>Column3</p>-->
-<!--    </div>-->
+    <!--    <div class="col-sm-2 sidenav">-->
+    <!--      <p>Column3</p>-->
+    <!--    </div>-->
   </div>
 </div>
 
