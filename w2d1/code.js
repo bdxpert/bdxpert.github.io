@@ -4,8 +4,8 @@ function max(x,y){
     let data = [x,y];
 
     let res = data.reduce(function(prev, elm, i, array) {
-        return x > y? x : y;
-    }, x);
+        return prev > elm? prev : elm;
+    }, 0);
     return res;
 }
 // console.log("Expected output of max(20,10) is 20  " + myFunctionTest(20, max(20, 10)));
@@ -15,8 +15,8 @@ function maxThree(x, y, z){
     let data = [x,y, z];
 
     let max = data.reduce(function(prev, elm, i, array) {
-        return x > y? x : y;
-    }, x);
+        return prev > elm? prev : elm;
+    }, 0);
 
     return max;
 }
