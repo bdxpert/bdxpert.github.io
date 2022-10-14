@@ -1,7 +1,7 @@
 describe("String.prototype.filter", function () {
     it("takes string, and filter some words and retrun final string",
         function () {
-            assert.equal("i am  good", "i am not good".filter(["not","is"]);
+            assert.equal("i am  good", "i am not good".filter(["not","is"]));
         });
 });
 
