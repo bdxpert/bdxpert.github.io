@@ -3,6 +3,8 @@ $(document).ready(function() {
     $("#start").click(function() {
         gameStart = true;
         $(".boundary").removeClass("youlose");
+
+        $("#status").text("Click the \"S\" to begin.");
     });
 
     $(".boundary").mouseover(function() {
