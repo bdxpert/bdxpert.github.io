@@ -3,7 +3,13 @@ $(document).ready(function() {
         $(this).hide();
         intervalId = null;
     });
-
+    $(document).ready(function() {
+        $("#helloForm").append($("<input>", {
+            "name":"hello",
+            "type": "text",
+            "value": "hello world"
+        }));
+    });
     let intervalId =  setInterval(function() {
         let widthPx = $("#circle-div").width();
         let heightPx = $("#circle-div").height();
