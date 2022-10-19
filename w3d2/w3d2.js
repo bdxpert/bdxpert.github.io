@@ -3,6 +3,7 @@ $(document).ready(function() {
         startPlay();
     });
 });
+
 function startPlay() {
     console.log($("#circle-div").width());
     let growthAmount = $("#growthAmount").val();
