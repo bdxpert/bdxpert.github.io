@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+    <meta charset="utf-8">
+    <title>Simple Form</title>
+    <style>
+         li{
+         margin-right:120px;
+         display:inline;
+        }
+    </style>
+</head>
+<body>
+<h1>Cart Items</h1>
+<ul>
+<li>
+    <ul>
+    <li>Name</li>
+    <li>Quantity</li>
+    <li>Price</li>
+    </ul>
+</li>
+
+<% for (const [key, value] of carts) { %>
+<li>
+    <ul>
+        <li><%= value.name %></li>
+        <li><%= value.quantity %></li>
+        <li><%= value.price %></li>
+    </ul>
+</li>
+<% } %>
+
+</ul>
+</body>
+</html>

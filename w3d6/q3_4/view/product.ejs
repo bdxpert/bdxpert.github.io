@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+    <meta charset="utf-8">
+    <title>Simple Form</title>
+    <style>
+    ul li{
+     display:block;
+    }
+    </style>
+</head>
+<body>
+<h1>Products Details</h1>
+<form method="post" action="/addToCart">
+<ul>
+    <li>Name: <%= product.name %><input type="hidden" name="name" value="<%= product.name %>" /></li>
+    <li>Description: <%= product.description %></li>
+    <li>Price: <%= product.price %><input type="hidden" name="price" value="<%= product.price %>" /></li>
+    <li>Action: <%= product.quantity %></li>
+    <li><button name="addToCart">Add To Cart</button></li>
+</ul>
+</form>
+</body>
+</html>
