@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+    <meta charset="utf-8">
+    <title>Simple Form</title>
+    <style>
+         li{
+         margin-right:120px;
+         display:inline;
+        }
+    </style>
+</head>
+<body>
+<h1>Cart Items</h1>
+<ul>
+<li>
+    <ul>
+    <li>Name</li>
+    <li>Quantity</li>
+    <li>Price</li>
+    </ul>
+</li>
+
+<% for (let key in carts) {  %>
+<li>
+    <ul>
+       <% if(key != 'cookie') { %>
+
+        <li><%= carts[key].name %></li>
+        <li><%= carts[key].quantity %></li>
+        <li><%= carts[key].price %></li>
+       <% } %>
+    </ul>
+</li>
+<% } %>
+
+</ul>
+</body>
+</html>

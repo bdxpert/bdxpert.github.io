@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+    <meta charset="utf-8">
+    <title>Simple Form</title>
+    <style>
+         li{
+         margin-right:120px;
+         display:inline;
+        }
+    </style>
+</head>
+<body>
+<h1>Products List</h1>
+<ul>
+<li>
+    <ul>
+    <li>Name</li>
+    <li>Description</li>
+    <li>Price</li>
+    <li>Action</li>
+    </ul>
+</li>
+
+<% for (const item of prods) { %>
+<li>
+    <ul>
+        <li><%= item.name %></li>
+        <li><%= item.description %></li>
+        <li><%= item.quantity %></li>
+        <li><%= item.price %></li>
+        <li><a href='/details?name=<%= item.name %>'>Details</a></li>
+    </ul>
+</li>
+<% } %>
+
+</ul>
+</body>
+</html>

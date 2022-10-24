@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+    <meta charset="utf-8">
+    <title>Cookie Form</title>
+    <style>
+    ul li{
+     display:block;
+    }
+    </style>
+</head>
+<body>
+<h1>Cookie Form</h1>
+<form method="post" action="/">
+<ul>
+    <li>Key:<input type="text" name="key" value="" /></li>
+    <li>Name:<input type="text" name="name" value="" /></li>
+
+    <li><button name="addToCookie">Add To Cookie</button></li>
+</ul>
+</form>
+<ul>
+    <% for (const val of cokkies) { %>
+
+            <li><b>Key:</b><%= val.key %></li>
+            <li><b>Value:</b><%= val.value %></li>
+
+    <% } %>
+</ul>
+</body>
+</html>
