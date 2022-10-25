@@ -9,13 +9,6 @@ app.use('/css', express.static(path.join(__dirname, 'css')));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, "view"));
 
-let cssVal = "day";
-const date_ob = new Date();
-const hour = date_ob.getHours();
-
-if (hour > 17 && hour < 7) {
-    cssVal = "night";
-}
 let cart = new Map();
 app.get('/', (req, res) => {
     res.render("shop", { prods: Product.getAll() } );
