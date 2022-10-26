@@ -60,6 +60,10 @@ app.post('/addToCart', (req, res) => {
     if(!found) {
         req.session.list.push({name:req.body.name, price:req.body.price, quantity: 1});
     }
+    let totalItem = 0;
+    req.session.list.forEach(function (item){
+        totalItem +=item.quantity;
+    });
     /*if(req.session.list[encodeURIComponent(req.body.name)] == undefined) {
         console.log("cart8888");
         req.session.list.push({name:req.body.name, price:req.body.price, quantity: 1});
@@ -75,7 +79,7 @@ app.post('/addToCart', (req, res) => {
         req.session.list[encodeURIComponent(req.body.name)] = cartItem;
     }*/
     console.log(req.session.list);
-    res.send("Number of item in the cart: " + req.session.list.length);
+    res.send("Number of item in the cart-> " + req.session.list.length +" Total Quantity-->"+totalItem);
     res.status(200);
     res.end();
     // res.redirect(303, '/cart');

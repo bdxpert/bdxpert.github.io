@@ -13,12 +13,13 @@
 </head>
 <body>
 <h1>Products Details</h1>
+<h2 id="success"></h2>
 <form id="add">
 <ul>
     <li>Name: <%= product.name %><input type="hidden" name="name" id="name" value="<%= product.name %>" /></li>
     <li>Description: <%= product.description %></li>
     <li>Price: <%= product.price %><input type="hidden" name="price" id="price" value="<%= product.price %>" /></li>
-    
+
     <li><button name="addToCart">Add To Cart</button></li>
     <li><a href="/cart">Display Cart</a><span id="msg"></span></li>
 </ul>

@@ -1,12 +1,13 @@
 $(() => {
-    const clearMsg = () => $("#msg").text("");
+    const clearMsg = () => $("#success").text("");
     const addedSuccess = (data) => {
         $("#msg").text(data);
+        $("#success").text("Cart successfully updated");
         // $("#question").focus();
-        //  setTimeout(clearMsg, 3000);
+          setTimeout(clearMsg, 3000);
     }
     const noSuccess = () => {
-        $("#msg").text("Unable to reach server");
+        $("#success").text("Unable to reach server");
         setTimeout(clearMsg, 10000);
     }
 //name:req.body.name, price:req.body.price, quantity: 1
